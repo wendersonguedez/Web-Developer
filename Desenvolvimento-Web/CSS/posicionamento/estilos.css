@@ -1,0 +1,43 @@
+div#painelA{
+    background-color: #ff0000;
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    /* POSITION VAI DEFINIR O TIPO DE METODO DE POSICIONAMENTO USADO PARA UM ELEMENTO ( estatico, relativo, absoluto ou fixo);
+    POSITION: ABSOLUTE, O ELEMENTO É POSICIONADO EM RELAÇÃO AO PRIMEIRO ELEMENTO ANCESTRAL POSICIONADO (PAI)
+    POSITION: RELATIVE, O ELEMENTO É POSICIONADO EM RELAÇÃO À SUA POSIÇÃO NORMAL, ENTÃO "left:20px" adiciona 20 pixels à posição ESQUERDA do elemento
+    POSICIONAMENTO DE ELEMENTOS FUNCIONA SEMPRE BASEADO COM O ELEMENTO QUE ENGLOBA ESSES ELEMENTOS, <body> vai englobar <div> */
+    right: 100px;
+    bottom: 100px;
+    
+}
+
+div#painelB{
+    background-color: #0000ff;
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+
+
+div#painelC{
+    background-color: #00ff00;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 300px;
+    top: 300px;
+}
+
+
+div#painelD{
+    background-color: #ffff00;
+    width: 40px;
+    height: 40px;
+    
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}

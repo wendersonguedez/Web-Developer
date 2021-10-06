@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>CSS</title>
+        <style>
+            .paragrafoGrandeAzul{
+                font-size: 36px;
+                color: #3366ff;
+            }
+        </style>
+        <link rel="stylesheet" type="text/css" href="meuPrimeiroArquivo.css">
+        <!-- CHAMANDO UM ARQUIVO CSS -->
+    </head>
+    <body>
+        <p class="paragrafoGrandeAzul">Site do André Milani</p>
+        <!-- APLICANDO OS ESTILOS DEFINIDOS NA CLASSE "paragrafoGrandeAzul" -->
+        <p style="font-size: 22px; color: #ffcc00;">Site do André Milani</p>
+        <!-- ADICIONANDO PROPRIEDADES DO CSS DIRETAMENTE NA TAG -->
+        <p class="paragrafoGrandeVermelho">Site do André Milani</p>
+        
+        <p class="paragrafoGrandeVermelho" style="color: #00ff00; text-decoration: underline;" >Site do André Milani</p>
+        <!-- TEXT DECORATION: UNDERLINE PERMITE ADICIONAR SUBLINHADO NO TEXTO -->
+        <!-- APESAR DE TER UMA CLASSE QUE VAI APLICAR OS ESTILOS CSS ESCRITOS NELA E UMA ADIÇÃO DE PROPRIEDADE
+        DIRETAMENTE NA TAG, NÃO TERÁ CONFLITO. -->
+        <!-- A COR SELECIONADA NA PROPRIEDADE COLOR, DENTRO DO ATRIBUTO STYLE, SERÁ APLICADA NO TEXTO, 
+        POIS USA A INFORMAÇÃO MAIS RECENTE RECEBIDA. -->  
+        <p class="fundoVermelho corBranca">Parágrafo com vários estilos</p>
+        <!-- PERMITE APLICAR DOIS ESTILOS DE DIFERENTES CLASSES EM UMA SÓ TAG -->
+        <p>Parágrafo sem atributos style/class, mas com marcação própria</p>
+        <!-- PROPRIEDADES CSS SENDO APLICADA EM TODAS AS TAG P (NO ARQUIVO CSS) -->
+        <p id="rodape">Parágrafo com id "rodape"</p>
+        <!-- ID FAZ UMA IDENTIFICAÇÃO UNICA DA TAG HTML. BASTANTE UTILIZADO PARA MANIPULAÇÃO COM JS E AJAX -->
+        <p id="dicaDoAndre">DICA: comparar o seu código com o do instrutor</p>
+
+        <b id="rodape">Texto</b>
+        
+        <table>
+            <tr>
+                <th class="paragrafoGrandeVermelho">Título da tabela</th>
+            </tr>
+        </table>
+
+    </body>
+</html>

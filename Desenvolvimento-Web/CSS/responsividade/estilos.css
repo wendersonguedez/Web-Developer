@@ -1,0 +1,119 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+div#painelA{
+    background-color: #ff0000;
+    width: 50%;
+    /* LARGURA SENDO DEFINIDA COMO 50% DE TODA A VIEWPORT */
+    height: 400px;
+    
+    position: absolute;
+    top: 0px;
+    /* DEFININDO QUE ESSE ELEMENTO NÃO TEM TOPO */
+    left: 0px;
+}
+
+div#painelB{
+    background-color: #00ff00;
+    width: 50%;
+    /* LARGURA SENDO DEFINIDA COMO 50% DE TODA A VIEWPORT */
+    height: 200px;
+    /* DEFININDO QUE ESSE ELEMENTO POSSUI METADE DA ALTURA DO PRIMEIRO ELEMENTO (400px) */
+    position: absolute;
+    left: 50%;
+    /* DEFININDO QUE ESSE ELEMENTO VAI TER 50% DO SEU LADO ESQUERDO PREENCHIDO, O DESLOCANDO PARA A DIREITA */
+    top: 0px;
+    /* DEFININDO QUE ESSE ELEMENTO NÃO TEM TOPO */
+}
+
+div#painelC{
+    background-color: #0000ff;
+    width: 25%;
+    /* DEFININDO QUE ESSE ELEMENTO POSSUI METADE DA LARGURA DO ANTERIOR (50%) */
+    height: 200px;
+    /* DEFININDO QUE ESSE ELEMENTO POSSUI METADE DA ALTURA DO PRIMEIRO ELEMENTO (400px) */
+    
+    position: absolute;
+    left: 50%;
+    top: 200px;
+    /* DEFININDO QUE O ELEMENTO VAI PULAR 200px PARA BAIXO (pois o anterior possui largura de 200px) */
+}
+
+div#painelD{
+    background-color: #ffff00;
+    width: 25%;
+    height: 200px;
+    
+    position: absolute;
+    left: 75%;
+    /* ELEMENTO PRECISA PERCORRER 50% QUE O ELEMENTO C JA CAMINHOU + 25% DA METADE DO ELEMENTO B*/
+    top: 200px;
+}
+
+p{
+    margin: 0px;
+    /* DEFININDO AS MARGENS DOS ELEMENTOS P = 0 */
+}
+
+@media(max-width: 768px){
+    /* ADICIONANDO A CONDIÇÃO QUE PARA DISPOSITIVOS COM ATÉ NO MAX 768px de LARGURA, TENHAM DETERMINADO ESTILO APLICADO SOBRE OS
+    QUE JA FORAM DEFINIDOS ANTES*/
+    div#painelA{
+        width: 100%;
+        /* DEFININDO A NOVA LARGURA DO ELEMENTO EM 100% */
+    }
+    
+    div#painelB{
+        top: 400px;
+        /* COLOCANDO O PAINEL PARA DEBAIXO DO ELEMENTO A */
+        left: 0px;
+        /* POSICIONANDO ESSE ELEMENTO TOTALMENTE COLADO À ESQUERDA */
+        width: 100%;
+        /* DEFININDO A LARGURA DESSE ELEMENTO EM 100% */
+    }
+    
+    div#painelC{
+        top: 600px;
+        left: 0px;
+        width: 50%;
+    }
+    
+    div#painelD{
+        top: 600px;
+        left: 50%;
+        width: 50%;
+    }
+}
+
+@media (max-width: 520px){
+    div#painelC{
+        width: 100%;
+    }
+    
+    div#painelD{
+        top: 800px;
+        left: 0px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 600px){
+    /* ADICIONANDO A CONDIÇÃO QUE PARA DISPOSITIVOS COM NO MIN 600px de LARGURA, TENHAM DETERMINADO ESTILO APLICADO SOBRE OS
+    QUE JA FORAM DEFINIDOS ANTES*/
+    p{
+        text-decoration: underline;
+        /* ADICIONANDO SUBLINHADO AOS TEXTOS */
+    }
+}
+
+
+
+
+
+
+
+
+
+
