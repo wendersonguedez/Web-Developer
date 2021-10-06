@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    /* margem de todos os lados = 0, significa que você não quer margem alguma */
+}
+
+body{
+    background-color: #123123;
+}
+
+.containerTopo{
+    width: 900px;
+    height: 200px;
+    background-image: url("../CSS_II/arquivos/jp_topoFundo.jpg");
+    margin: 0 auto;
+    /* Significa que o browser dará uma margem automática para todos os lados */
+    
+}
+.logotipoTopo{
+    position: relative;
+    top: 20px;
+    left: 40px;
+}
+
+.containerMenu{
+   width: 500px;
+    height: 40px;
+    background-image: url("../CSS_II/arquivos/jp_menuFundo.jpg");
+
+    position: relative;
+    top: -80px;
+    left: 325px;
+
+    border: 2px solid white;
+    border-radius: 20px 0px 20px 0px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.menuLink, .menuSp{
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    text-shadow: 2px;
+}
+
+.menuLink:hover{
+    text-decoration: underline;
+    /* PASSANDO COM O CURSOR DO MOUSE POR CIMA, VAI APARECER O SUBLINHADO */
+}
+
+h1#secaoFilmes{
+    width: 900px;
+    height: 100px;
+    background-color: #550000;
+
+    margin: 0 auto;
+    text-align: center;
+    line-height: 100px;
+}
+
+@font-face{
+    font-family: JurassicFont;
+    src: url("..//CSS_II/arquivos/jp_fontJurassicPark.ttf");
+}
+
+.paginaTitulo{
+    font-family: JurassicFont;
+    font-size: 60px;
+    color: white;
+    letter-spacing: 6px;
+    /* DEFININDO O ESPAÇAMENTO ENTRE OS CARACTERES */
+}
+
+.containerFilmeA{
+    width: 900px;
+    height: 330px;
+    background-color: white;
+
+    margin: 0 auto;
+}
+
+.filmePosterA{
+    border: 5px solid red;
+    float: left;
+
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+.filmeDescA{
+    position: relative;
+    top: 50px;
+    left: 90px;
+
+    margin: 0 ;
+}
+
