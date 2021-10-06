@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Estrutura Semântica</title>
+        <style>
+            .flutuarEsquerda
+            {
+                float: left;
+            }
+            .meuDivTopo
+            {
+                height: 82px;
+            }
+            .meuDivLateral
+            {
+                height: 100px;
+                float: right;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <!-- Topo da página -->
+        <header>
+            <div class="meuDivTopo">
+                <figure> <!-- AGRUPAR UM CONJUNTO DE IMAGENS; AJUDA NAS PESQUISAS DO ROBO DE BUSCA -->
+                    <img src="LogotipoSoftblue.png"
+                         alt="Logotipo da Softblue"
+                         class="flutuarEsquerda">
+                </figure>
+                
+                <!-- Menu principal do site -->
+                <nav> <!-- AGRUPA AS PRINCIPAIS INFORMAÇÕES/PONTOS DE ACESSO DA PÁGINA -->
+                    <a href="#">EMPRESA</a>
+                    <a href="#">CURSOS</a>
+                    <a href="#">CONTATO</a>
+                </nav>
+            </div>
+        </header>
+        
+        <!-- Menu secundário -->
+        <aside> <!-- VAI ENGLOBAR UM MENU SECUNDARIO/LATERAL, QUE ESTÁ RELACIONADO COM O TEMA DA MATÉRIA -->
+            <div class="meuDivLateral">
+                <a href="#">Como funciona?</a><br>
+                <a href="#">Certificado</a><br>
+                <a href="#">Nossos instrutores</a>
+            </div>
+        </aside>
+        
+        <section>
+            <article>
+                <header>
+                    <h1>Curso de Lógica de Programação</h1>
+                </header>
+                <p>
+                    Quer aprender com qualidade? Venha fazer parte
+                    dos melhores, venha aprender a programar na Softblue,
+                    em nosso <strong>curso de Lógica de Programação</strong>.
+                </p>
+                <figure>
+                    <img src="CursoLogica.png" alt="Curso de Lógica de Programação">
+                    <figcaption>Curso de Lógica de Programação da Softblue</figcaption>
+                    <!-- FIGCAPTION PERMITE PÔR LEGENDA NAS IMAGENS, AJUDANDO SEMANTICAMENTE OS ROBOS DE BUSCA -->
+                </figure>
+            </article>
+        </section>
+            
+        <!-- Rodapé da página -->
+        <footer>
+            &copy; Softblue - Todos os direitos reservados
+        </footer>
+        
+    </body>
+</html>

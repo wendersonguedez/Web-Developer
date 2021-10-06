@@ -1,0 +1,172 @@
+@keyframes animacaoAlerta{
+/* KEYFRAMES É ONDE DEFINE OS CODIGOS DE ANIMAÇÕES E LOGO EM SEGUIDA O NOME DELA */ 
+
+    /* ABAIXO ESTA DEFININDO OS ESTADOS DA ANIMAÇÃO*/
+    from{
+        /* ESTADO INICIAL */
+        background-color: #000000;
+        font-size: medium;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+    
+    to{
+        /* ESTADO FINAL */
+        background-color: #ff0000;
+        font-size: x-large;
+        position: absolute;
+        left: 100px;
+        top: 20px;
+    }
+}
+
+div#alerta{
+    width: 500px;
+    height: 50px;
+    line-height: 50px;
+    /* ESPECIFICA A ALTURA DE UMA LINHA */
+    text-align: center;
+    background-color: #ff0000;
+    animation-name: animacaoAlerta;
+    /* NOME DA ANIMAÇÃO QUE FOI DEFINIDO EM KEYFRAMES */  
+    animation-duration: 3s;
+    /* TEMPO QUE ESSA ANIMAÇÃO VAI LEVAR PARA SER EXECUTADA */
+    animation-iteration-count: infinite;
+    /* DEFINE A QUANTIDADE DE VEZ QUE A ANIMAÇÃO VAI SE REPETIR */
+}
+
+
+
+
+@keyframes animacaoAlertaContinuo{
+    0%{
+    /* ESTADO DA ANIMAÇÃO (INICIAL) EM PORCENTUAL */    
+        background-color: #000000;
+        font-size: medium;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+    
+    50%{
+    /* (MEIO) */
+        background-color: #00ff00;
+        position: absolute;
+        top: 100px;
+    }
+    
+    100%{
+    /* (FINAL) */
+        background-color: #ff0000;
+        font-size: x-large;
+        position: absolute;
+        left: 100px;
+        top: 20px;
+    }
+}
+
+div#alertaContinuo{
+    width: 500px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #ff0000;
+    animation-name: animacaoAlertaContinuo;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+
+
+
+
+
+
+
+
+@keyframes animacaoAlertaContinuoSmart{
+    0%, 100%{
+        background-color: #000000;
+        font-size: medium;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+    
+    50%{
+        background-color: #00ff00;
+        position: absolute;
+        top: 100px;
+    }
+    
+    70%{
+        background-color: #ffff00;
+    }
+    
+
+}
+
+div#alertaContinuoSmart{
+    width: 500px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #ff0000;
+    animation-name: animacaoAlertaContinuoSmart;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+
+
+@keyframes animacaoAlertaContinuoSmartSome{
+    0%{
+        background-color: #000000;
+        font-size: medium;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        opacity: 1;
+    }
+    
+    50%{
+        background-color: #00ff00;
+        position: absolute;
+        top: 100px;
+    }
+    
+    70%{
+        background-color: #ffff00;
+        opacity: 1;
+    }
+        
+    100%{
+        background-color: #000000;
+        font-size: medium;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        opacity: 0;
+    }
+    
+
+}
+
+div#alertaContinuoSmartSome{
+    width: 500px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #ff0000;
+    opacity: 0;
+    
+    animation-name: animacaoAlertaContinuoSmartSome;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+
+
+
+
+

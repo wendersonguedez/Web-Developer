@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Formulários</title>
+    </head>
+    <body>
+        <form method="get" action="?"> 
+            <!-- FORM DELIMITA O INICIO/FIM DO FORMULARIO !--> 
+            <!-- METHOD É UM ATRIBUTO QUE VAI DIZER O TIPO DE COMUNICAÇÃO COM O SERVIDOR !-->
+            <!-- ACTION É UM ATRIBUTO QUE VAI INDICAR O ENDEREÇO DE DESTINO PARA ONDE OS DADOS SERÃO ENVIADOS !-->
+            <label>Nome: </label>
+            <!-- TAG LABEL SERVE PARA INDICAR O NOME DO CAMPO DO FORMULARIO !-->
+            <input type="text" name="campoNome" placeholder="Insira aqui o seu nome...">
+            <br>
+            
+            <label>Idade: </label>
+            <input type="number" name="campoIdade" min="0" max="115">
+            <!-- MIN = VALOR MINIMO DE PREENCHIMENTO; MAX = VALOR MAXIMO DE PREENCHIMENTO !-->
+            <br>
+            
+            <label>Sexo: </label>
+            <input type="radio" name="campoSexo" value="M"> Masculino
+            <input type="radio" name="campoSexo" value="F"> Feminino
+            <!-- TYPE RADIO USADO QUANDO SE TEM DUAS OPÇÕES DE ESCOLHA !-->
+            <!-- VALUE VAI ENVIAR PARA O SERVIDOR QUAL OPÇÃO FOI SELECIONADA !-->
+            <br>
+            
+            <label>Interesses: </label>
+            <br>
+            <input type="checkbox" name="campoAutomovel"> Automóveis
+            <br>
+            <input type="checkbox" name="campoBarco"> Barcos
+            <br>
+            <input type="checkbox" name="campoAviao"> Aviões
+            <!-- TYPE CHECKBOX NÃO ANULA OUTROS CAMPOS SELECIONADOS !-->
+            <br>
+            
+            <label>Estado civil: </label>
+            <select name="campoEstadoCivil">
+                <option value="S">Solteiro(a)</option>
+                <option value="C">Casado(a)</option>
+                <option value="D">Divorciado(a)</option>
+                <option value="V">Viúvo</option>
+                <!-- CAMPOS DO TIPO PRE DEFINIDOS !-->
+                <!-- VALUE VAI ENVIAR PARA O SERVIDOR QUAL OPÇÃO FOI SELECIONADA !-->
+            </select>
+            <br>
+            
+            <input type="reset" value="Limpar os dados">
+            <input type="submit" value="Enviar os dados">
+        </form>
+    </body>
+</html>
