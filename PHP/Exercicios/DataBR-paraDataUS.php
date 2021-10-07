@@ -6,9 +6,9 @@ echo "Formato brasileiro: " . date("d/m/Y H:i:s", $formatoBR);
 // QUEBRA DE LINHA
 echo "<br><br>";
 
-// CHAMANDO A FUNÇÃO PARA REALIZAR A FORMATAÇÃO E EXIBINDO ELA.
+// CHAMANDO A FUNÇÃO PARA REALIZAR A FORMATAÇÃO E EXIBIR ELA.
 $formatoUS = dataUS();
-echo "Formato Americano: " . $formatoUS;
+echo "Formato americano: " . $formatoUS;
 
 // FUNÇÃO PARA FORMATAR UMA DATA NO FORMATO AMERICANO.
 function dataUS(){
