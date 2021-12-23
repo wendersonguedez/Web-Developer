@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+</head>
+
+<body>
+    <script>
+        document.write("Hello World!");
+        // DOCUMENT.WRITE("") EXIBE INFORMAÇÕES NA TELA
+        document.write("<br>");
+
+        document.write("<b>Fórmula</b> 1");
+        document.write("<br>");
+
+        var alfa = "André";
+        // CRIANDO UMA VARIAVEL CHAMADA ALFA, QUE ESTA RECEBENDO O VALOR "André"
+        var beta = "Milani";
+        var gama = alfa + " " + beta;
+        // CRIANDO UMA VARIAVEL CHAMADA GAMA, QUE ESTA RECEBENDO O VALOR DE ALFA + BETA
+        document.write(gama);
+        // EXIBINDO NA TELA A VARIAVEL GAMA
+        document.write("<br>");
+
+        var x = 10;
+        var y = 23.79;
+        var z = x + y;
+        document.write(z);
+        document.write("<br>");
+
+        var resultado = x + y - 5 * (1 + 1);
+        document.write(resultado);
+        document.write("<br>");
+
+        var resultado = 1 + 2 + 3 + x + x;
+        document.write(resultado);
+        document.write("<br>");
+
+        x = 8;
+
+        if (x % 2 == 0) {
+        // % RETORNA O RESTO DA DIVISÃO
+        // QUANDO NUMEROS PARES SAO DIVIDIDOS POR 2, SEMPRE RESTAM 0 NA DIVISÃO
+            document.write("PAR");
+            document.write("<br>");
+        } else {
+        // NUMEROS IMPARES SEMPRE VÃO SOBRAR 1
+            document.write("ÍMPAR");
+            document.write("<br>");
+        }
+
+        resultado = true;
+        document.write(resultado);
+        document.write("<br>");
+
+        resultado = false;
+        document.write(resultado);
+        document.write("<br>");
+        // 16:00
+        var lista = new Array("Ferrari", "McLaren", "Red Bull");
+        document.write(lista[0]);
+        document.write("<br>");
+        document.write(lista[1]);
+        document.write("<br>");
+        document.write(lista[2]);
+        document.write("<br>");
+
+        //                     1         2
+        //           0123456789012345678901234
+        var texto = "JavaScript é na Softblue!";
+        var tamanhoDoTexto = texto.length;
+        document.write(tamanhoDoTexto);
+        document.write("<br>");
+
+        var posicao = texto.indexOf("Softblue");
+        document.write(posicao);
+        document.write("<br>");
+
+        document.write("Ocorrências de 'a': <br>");
+
+        posicao = texto.indexOf("a");
+        while (posicao != -1) {
+            document.write("Posição: " + posicao + "<br>");
+            posicao = texto.indexOf("a", posicao + 1);
+        }
+
+        // 1, 14
+        var textoParcial = texto.substring(1, 14);
+        document.write(textoParcial + "<br>");
+
+        var texto = "André Milani";
+        texto = texto.replace("Milani", "Softblue");
+        document.write(texto + "<br>");
+    </script>
+</body>
+
+</html>

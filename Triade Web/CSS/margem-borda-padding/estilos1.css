@@ -1,0 +1,135 @@
+.bordaA{
+    border: 3px solid #ff0000;
+    border-radius: 8px;
+    /* border: 5px dotted #ff0000; */
+    /* border: 3px dashed #ff0000; */
+    /* BORDER DEFINE A BORDAR, DEPOIS DEFININDO SUA ESPESSURA (3px), DEPOIS ESTILO DA BORDA E POR FIM SUA COR */
+    /* BORDER-RADIUS PERMITE ARREDONDAR OS CANTOS DAS BORDAS */
+    /* DOTTED (PONTILHADO) É UM ESTILO DE BORDA */
+    /* DASHED (TRACEJADO)  É UM ESTILO DE BORDA */
+}
+
+table{
+    background-color: #dddddd;
+    border: 1px solid #000000;
+    /* BACKGROUND-COLOR VAI DEFINIR A COR DE FUNDO */
+}
+
+.bordaDiv{
+    width: 400px;
+    height: 400px;
+    border: 1px solid #ff0000;
+}
+
+.bordaB{
+    border-style: inset; 
+    /*border-style: outset;*/
+    border-width: 5px;
+    width: 50%;
+    /* BORDER-STYLE DEFINE SOMENTE O ESTILO DA BORDA, SEM ALTERAR OS VALORES DE COR E ESPESSURA */
+    /* BORDER-STYLE: INSET PERMITE UM EFEITO 3D ESCURO NAS BORDAS; */
+    /* BORDER-STYLE: OUTSET PERMITE UM EFEITO 3D CLARO NAS BORDAS; */
+    /* BORDER-WIDTH DEFINE SOMENTE A ESPESSURA DA BORDA */
+    /* WIDTH VAI DEFINIR A LARGURA DO ELEMENTO  */
+}
+
+.bordaC{
+    border-left: 3px solid #ff0000;
+    border-top: 5px solid #ff0000;
+    border-bottom: 7px solid #ff0000;
+    border-right: 9px solid #ff0000;
+    /* DEFININDO ESTILOS PARA DETERMINADAS POSIÇÕES DA BORDA. Ex.: BORDER-LEFT VAI AFETAR APENAS O LADO ESQUERDO DO ELEMENTO */
+}
+
+.bordaMisturada{
+    width: 400px;
+    height: 100px;
+    border-style: solid dashed double dotted;
+    /* WIDTH VAI DEFINIR A LARGURA DO ELEMENTO */
+    /* HEIGHT VAI DEFINIR A ALTURA DO ELEMENTO */
+    /* NA LINHA 46, BORDER-STYLE ESTÁ DEFININDO VÁRIOS ESTILOS DE BORDA */
+    /* AINDA NA LINHA 46, NA PARTE SUPERIOR DA BORDA FOI DEFINIDO SEU ESTILO SÓLIDO, NA DIREITA TRACEJADO, NA PARTE INFERIOR
+    COM LINHA DUPLA E FINALIZANDO NA ESQUERDA COM PONTILHADO */
+    /* COM A DEFINIÇÃO DE VÁRIAS BORDAS, O CSS COMEÇA DEFININDO PELA BORDA DE CIMA E CONTINUA NO SENTIDO HORÁRIO */
+
+}
+
+.bordaMisturadaAvancado{
+    width: 300px;
+    height: 100px;
+    
+    border-top-style: solid;
+    border-right-style: dashed;
+    border-bottom-style: double;
+    border-left-style: dotted;
+    /* DEFININDO O ESTILO DE CADA BORDA POR POSIÇÃO (TOP=SUPERIOR, RIGHT=DIREITA, LEFT=ESQUERDA, BOTTOM= INFERIOR) */
+
+    border-top-color: #ff0000;
+    border-right-color: #00ff00;
+    border-bottom-color: #0000ff;
+    border-left-color: #ffff00;
+    /* DEFININDO A COR DE CADA BORDA POR POSIÇÃO (TOP=SUPERIOR, RIGHT=DIREITA, LEFT=ESQUERDA, BOTTOM= INFERIOR) */
+    
+    border-top-width: 5px;
+    border-right-width: 10px;
+    border-bottom-width: 15px;
+    border-left-width: 20px;
+    /* DEFININDO A ESPESSURA DE CADA BORDA POR POSIÇÃO (TOP=SUPERIOR, RIGHT=DIREITA, LEFT=ESQUERDA, BOTTOM= INFERIOR) */
+    
+    border-radius: 10px 20px 30px 40px;
+    /* FAZ O ARREDONDAMENTO DAS QUINAS DA BORDA. QUATRO VALORES DIFERENTES IRÁ APLICAR NOS QUATRO CANTOS OS RESPECTIVOS VALORES */
+}
+
+.imagemA{
+    margin: 50px;
+    padding: 15px;
+    border: 5px solid #000000;
+}
+
+.imagemB{
+    margin: 80px;
+    padding: 15px;
+    border: 5px solid #000000;
+}
+
+.imagemD{
+    margin: 20px;
+    border: 5px solid #000000;
+    /* padding: 10px 20px 30px 40px; */
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+}
+
+.imagemE{
+    padding: 20px;
+    border: 5px solid #000000;
+    /* margin: 10px 15px 20px 30px; 
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    margin-left: 40px;*/
+
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    /* PADDING FAZ PREENCHIMENTO DO INTERIOR ATÉ A BORDA */
+    /* MARGIN FAZ PREENCHIMENTO DA BORDA ATÉ O LIMITE DE OUTROS ELEMENTOS */
+}
+
+/* 24:00 */;
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Imagens, vídeos, listas e tabelas</title>
+</head>
+
+<body>
+    <h1>Imagens</h1>
+
+    <img src="imagemEnfeite.jpg" alt="Prateleira de livros">
+    <!-- ALT PERMITE DAR NOMES PARA IMAGEM; PODE VIM SER UTILIZADO PELO ROBO DE BUSCA -->
+    <figure>
+        <!-- DÁ INFORMAÇÕES MAIS ROBUSTAS PARA OS ROBOS DE PESQUISA, AVISANDO QUE ESTÁ AGRUPANDO UM CONJUNTO DE IMAGENSf !-->
+        <a href="http://www.youtube.com/user/softbluecursos">
+            <img src="sbv2_brasilMap.png">
+        </a>
+        <figcaption>Softblue: de Curitiba para todo o Brasil (mapa).</figcaption>
+        <!-- LEGENDA QUE VAI AJUDAR NA PESQUISA DE IMAGENS!-->
+    </figure>
+
+    <h1>Vídeos</h1>
+
+    <video width="320" height="180" controls>
+        <!-- CONTROLS É UM ATRIBUTO QUE VAI DISPONIBILIZAR CONTROLADORES DO VIDEO!-->
+        <source src="seuVideo.mp4" type="video/mp4"> <!-- VAI INDICAR A LOCALIZAÇÃO DO VIDEO!-->
+        Seu navegador não suporta esse vídeo.
+    </video>
+
+    <br>
+    <iframe width="320" height="180" src="https://www.youtube.com/embed/iTlKN1HJkb0" frameborder="0"
+        allowfullscreen></iframe> <!-- ABRE UM QUADRO DE VIDEO REDIRECIONADO DO YOUTUBE !-->
+
+    <h1>Listas</h1>
+
+
+    <ul>
+        <!-- LISTA NÃO ORDENADA/NUMERADA !-->
+        <li>HTML</li> <!-- ITEM DA LISTA !-->
+        <ul>
+            <li>Marcações</li>
+            <li>Criação de links</li>
+        </ul>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Ajax</li>
+    </ul>
+
+    <ol>
+        <!-- LISTA ORDENADA/NUMERADA !-->
+        <li>McLaren</li>
+        <li>Ferrari</li>
+        <li>Red Bull</li>
+    </ol>
+
+    <table border=1>
+        <!-- DEFINE O COMEÇO/FIM DE UMA TABELA; BORDER DEFINE O TIPO DE BORDA DA TABELA !-->
+        <caption>Relatório dos pilotos da Fórmula 1</caption> <!-- LEGENDA DA TABELA !-->
+        <tr>
+            <!-- CRIA UMA LINHA DENTRO DE UMA TABELA !-->
+            <th>Nome do Piloto</th> <!-- ADICIONA UMA COLUNA DE DESTAQUE (COMO SE FOSSE UM TITULO) NA TABELA !-->
+            <th>Pontuação</th>
+            <th>Ativo</th>
+            <th>Equipe</th>
+        </tr>
+
+        <tr>
+            <td>Lewis</td> <!-- ADICIONA UMA COLUNA COMUM (COMO SE FOSSE O CONTEUDO DO TITULO) NA TABELA !-->
+            <td>40</td>
+            <td rowspan=4>Sim</td> <!-- ROWSPAN DETERMINA A QUANTIDADE DE LINHAS QUE ESSA COLUNA VAI OCUPAR !-->
+            <td rowspan=2>Mercedes</td>
+        </tr>
+
+        <tr>
+            <td colspan=2>DESCLASSIFICADO</td>
+            <!-- COLSPAN DETERMINA A QUANTIDADE DE COLUNAS QUE ESSA LINHA VAI OCUPAR !-->
+        </tr>
+
+        <tr>
+            <td>Felipe</td>
+            <td>46</td>
+            <td rowspan=2>Ferrari</td>
+        </tr>
+
+        <tr>
+            <td>Vettel</td>
+            <td>49</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

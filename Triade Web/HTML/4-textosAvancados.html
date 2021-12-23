@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Textos Avançados</title>
+    </head>
+    <body>
+        <p>
+            Esta página apresenta trechos de códigos
+            do <strong>algoritmo de busca binária</strong>.
+        <!-- STRONG TEM RELEVÂNCIA SEMÂNTICA PARA O NAVEGADOR !-->
+        </p>
+        <!-- http://www.w3schools.com/html/html_entities.asp --> 
+        <p>
+            O nome da &nbsp;&nbsp;&nbsp; busca vem do inglês <em>binary search algorithm</em>.
+            <!-- EM SERVE PARA INDICAR UMA CITAÇÃO PARA O NAVEGADOR!-->
+            <!-- &nbsp PREENCHE UM ESPAÇO EM BRANCO !-->
+        </p>
+        <p>
+            O evento sobre <strong>algoritmo de busca binária</strong>
+            será no dia <b>10/10</b>.
+        </p>
+        <code> <!-- CODE INFORMA AO NAVEGADOR QUE ABAIXO TEM CODIGO FONTE !-->
+            <pre> <!-- PRE PERMITE DEIXAR UM TEXTO PRÉ-FORMATO !-->
+            public static int buscaBinaria(int[] array, int valor) {
+                int inicio = 0;
+                int fim = array.length-1;
+                while(inicio <= fim) {
+                    int meio = (inicio+fim)/2;
+                    if(array[meio] == valor){
+                        return meio;
+                    }
+                    if(valor > array[meio]){
+                        inicio = meio+1;
+                    } else {
+                        fim = meio-1;
+                    }
+                }
+                return -1;
+            }
+            </pre>
+        </code>
+        <p>
+            O algoritmo inicia criando as variáveis <var>inicio</var> e <var>fim</var>.
+            O programa iniciará quando o usuário pressionar a tecla <kbd>ENTER</kbd>.
+            O resultado desse exemplo será <samp>5 BUSCAS</samp>.
+            <!-- VAR SERVE PARA INDICAR O NOME DE VARIÁVEIS !-->
+            <!-- KBD SERVE PARA INDICAR O QUE ESTÁ DENTRO DA TAG É UMA TECLA DO TECLADO !-->
+            <!-- SAMP SERVE PARA INDICAR QUE TUDO QUE ESTÁ DENTRO DA TAG É UM RESULTADO DE MÁQUINA !-->
+        </p>
+
+        <p>
+            A fórmula da água é: H<sub>2</sub>O.
+        </p>
+        <p>
+            A fórmula do cálculo da hipotenusa é: a<sup>2</sup> = b<sup>2</sup> + c<sup>2</sup>
+        </p>
+    </body>
+</html>

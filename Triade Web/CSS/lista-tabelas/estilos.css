@@ -1,0 +1,85 @@
+.iconeA{
+    list-style-type: square;
+    /* LIST-STYLE-TYPE ALTERA O ESTILO DO MARCADOR DE ITEM (</li>) DA LISTA */
+}
+
+.iconeB{
+    list-style-type: circle;
+    /* LIST-STYLE-TYPE ALTERA O ESTILO DO MARCADOR DE ITEM (</li>) DA LISTA */
+}
+
+.iconeC{
+    list-style-image: url('star.png');
+    /* LIST-STYLE-IMAGE: URL ('') PERMITE SUBSTITUIR O MARCADOR DE ITEM DA LISTA POR UMA IMAGEM. 
+    BASTA VOCÊ COLOCAR O CAMINHO DELA DENTRO DA PROPRIEDADE URL('') */
+}
+
+.numeracaoA{
+    list-style-type: upper-roman;
+    /* LIST-STYLE-TYPE ALTERA O ESTILO DO MARCADOR DE ITEM (</li>) DA LISTA. UPPER-ROMAN SAO OS NUMEROS ROMANOS */
+}
+
+.numeracaoB{
+    list-style-type: lower-alpha;
+    /* LIST-STYLE-TYPE ALTERA O ESTILO DO MARCADOR DE ITEM (</li>) DA LISTA. LOWER-ALPHA SAO OS ALGARISMOS DO 
+    NOSSO ALFABETO */
+}
+
+table{
+    width: 100%;
+    /* LARGURA DA TABELA OCUPANDO 100% DA TELA */
+    border-collapse: collapse;
+    /* BORDER-COLLAPSE DEFINE QUE NÃO HAVERÁ ESPAÇAMENTO ENTRE AS CÉLULAS */
+
+}
+
+th{
+    background-color: #333333;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+}
+
+tr{
+    background-color: #dddddd;
+}
+
+td, tr, .minhaImagem{
+    border: 1px solid #000000;
+}
+
+tr{
+    font-style: italic;
+}
+
+tr:nth-child(even){
+    /* :NTH-CHILD(EVEN) DECLARA QUE O ESTILO VAI SER APLICADO SOMENTE PARA MARCAÇÕES TR (ex.) CUJA NUMERAÇÃO SEJA PAR (EVEN) */
+    background-color: #aaaaaa;
+}
+
+td:nth-child(odd){
+    /* :NTH-CHILD(EVEN) DECLARA QUE O ESTILO VAI SER APLICADO SOMENTE PARA MARCAÇÕES TD (ex.) CUJA NUMERAÇÃO SEJA ÍMPAR (ODD) */
+    background-color: #eeffee;
+}
+
+td.especial{
+    background-color: #ffff00;
+    /* DEFININDO A COR DE FUNDO DA COLUNA. (TOMAR CUIDADO PARA NÃO SOBRESCREVER CORES ENTRE TD E TR) */
+}
+
+.conteudoNegrito{
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
